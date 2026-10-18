@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>PZwJS</title>
+  <rect width="512" height="512" rx="112" fill="#0f766e"/>
+  <!-- pętla spacerowa -->
+  <path d="M256 400 C150 400 100 330 120 262 C140 195 210 215 250 175 C290 135 380 150 392 232 C404 314 350 400 256 400 Z"
+        fill="none" stroke="#f0fdfa" stroke-width="22" stroke-linecap="round" stroke-dasharray="1 44"/>
+  <!-- pinezka -->
+  <path d="M256 70 C207 70 172 105 172 150 C172 205 256 290 256 290 C256 290 340 205 340 150 C340 105 305 70 256 70 Z" fill="#fbbf24"/>
+  <circle cx="256" cy="150" r="30" fill="#0f766e"/>
+  <!-- iskra AI -->
+  <path d="M410 70 L420 100 L450 110 L420 120 L410 150 L400 120 L370 110 L400 100 Z" fill="#f0fdfa"/>
+  <!-- start/koniec pętli -->
+  <circle cx="256" cy="400" r="16" fill="#f0fdfa"/>
+</svg>
