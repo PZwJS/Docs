@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>PZwJS – spacer z AI</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#0f5f59"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcd34d"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <clipPath id="tile"><rect width="1024" height="1024" rx="224"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#tile)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <!-- siatka ulic miasta -->
+    <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="18" fill="none">
+      <path d="M-40 300 L1064 220"/>
+      <path d="M-40 560 L1064 520"/>
+      <path d="M-40 820 L1064 800"/>
+      <path d="M260 -40 L300 1064"/>
+      <path d="M560 -40 L520 1064"/>
+      <path d="M820 -40 L860 1064"/>
+    </g>
+  </g>
+
+  <!-- pętla spaceru: start i powrót w tym samym punkcie -->
+  <path id="route" d="M512 820
+           C360 820 220 760 210 620
+           C200 480 330 470 360 380
+           C390 290 450 220 560 230
+           C690 242 800 330 790 470
+           C780 600 680 640 650 720
+           C625 790 600 820 512 820 Z"
+        fill="none" stroke="#f0fdfa" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="70 46"/>
+
+  <!-- miejsca po drodze -->
+  <circle cx="360" cy="380" r="34" fill="#f0fdfa"/>
+  <circle cx="360" cy="380" r="16" fill="#f59e0b"/>
+  <circle cx="790" cy="470" r="34" fill="#f0fdfa"/>
+  <circle cx="790" cy="470" r="16" fill="#f59e0b"/>
+
+  <!-- pinezka na starcie/mecie -->
+  <path d="M512 826 C512 826 390 700 390 620 C390 552 444 500 512 500 C580 500 634 552 634 620 C634 700 512 826 512 826 Z"
+        fill="url(#pin)" stroke="#0f5f59" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="512" cy="618" r="44" fill="#0f5f59"/>
+
+  <!-- iskra AI -->
+  <path d="M790 120 Q800 200 880 210 Q800 220 790 300 Q780 220 700 210 Q780 200 790 120 Z" fill="#fef3c7"/>
+  <path d="M900 300 Q904 336 940 340 Q904 344 900 380 Q896 344 860 340 Q896 336 900 300 Z" fill="#fef3c7" fill-opacity="0.85"/>
+</svg>
